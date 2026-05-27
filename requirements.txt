@@ -1,0 +1,10 @@
+# mr check — runtime dependencies
+#
+# Only one third-party dependency. Everything else (json, subprocess,
+# argparse, dataclasses, datetime, pathlib) is in the standard library.
+#
+# reportlab is already installed system-wide on the dev machine
+# (verified 2026-05-27: reportlab 4.5.1 against Python 3.14). The pin
+# here is what to install if you ever spin up a fresh venv.
+
+reportlab>=4.5,<5.0
